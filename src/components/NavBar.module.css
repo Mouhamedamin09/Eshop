@@ -1,0 +1,174 @@
+@font-face {
+  font-family: 'Aleo';
+  src: url('../assets/fonts/Aleo-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  font-family: 'Aleo',sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 1.25rem;
+}
+
+.logo {
+  width: 5.313rem;
+  margin-left: 6.875rem;
+  cursor: pointer;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2.813rem;
+  margin-left: 15rem; 
+}
+
+.navLinks li {
+  display: inline;
+  align-self: center;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #000814;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Aleo', sans-serif;
+  transition: color 0.3s ease; 
+}
+
+.cartIcon {
+  width: 30px;
+  height: 31px;
+  transition: transform 0.3s ease;
+}
+
+.cartIcon:hover {
+  transform: scale(1.1);
+  
+ 
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 20px 4px rgba(0, 0, 0, 0.1); /* Adjust shadow values as needed */
+  border-radius: 6px;
+}
+
+.search input {
+  
+  line-height: 2.438;
+  width: 180px;
+  border: 1px solid #ccc;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-right:none ;
+  
+  
+  
+}
+
+.search button {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0.46rem;
+  cursor: pointer;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-left: none;
+ 
+  
+}
+
+.searchLogo{
+  width: 1.1rem;
+  height: 0.978rem;
+  
+  
+ 
+ 
+}
+
+.navLinks a:hover {
+  color: #FCBD01;
+}
+
+
+
+@media (max-width: 1240px) {
+  .navLinks {
+    margin-left: 0rem; 
+  }
+
+  .search {
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  
+}
+
+@media (max-width: 1005px) {
+  .navLinks {
+    gap: 1rem;
+  }
+
+  .logo {
+    
+    margin-left: 3.875rem;
+  }
+
+  
+
+  
+}
+
+
+
+@media (max-width: 840px) {
+  .navbar {
+    
+    align-items: flex-start; 
+    padding: 1rem; 
+    margin: auto;
+    
+  }
+
+
+  
+
+  .navLinks {
+    margin-left: 0; 
+    margin-top: 1rem; 
+    flex-direction: column;
+    gap: 1rem; 
+    order: 2;
+  }
+
+  .logo {
+    margin-left: 0; 
+    margin-bottom: 0.5rem; 
+  }
+
+  .searchLogo{
+    width: 1.1rem;
+    height: 0.99rem;
+  }
+
+ 
+}
+
+@media (max-width: 480px) {
+  .navLinks {
+    gap: 0.5rem; 
+  }
+}
